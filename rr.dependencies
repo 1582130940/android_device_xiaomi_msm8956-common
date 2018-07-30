@@ -1,7 +1,7 @@
 [
   {
-    "repository" : "sarthakmalla/device_msm8956-common",
-    "target_path": "device/msm8956-common",
+    "repository" : "sarthakmalla/device_xiaomi_msm8956-common",
+    "target_path": "device/xiaomi/msm8956-common",
     "branch"     : "oreo"
   },
   {
