@@ -1,6 +1,8 @@
 # Audio
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
+audio.offload.pcm.32bit.enable=true
+audio.offload.pcm.64bit.enable=true
 audio.offload.video=true
 persist.audio.fluence.voicerec=false
 voice.voip.conc.disabled=false
