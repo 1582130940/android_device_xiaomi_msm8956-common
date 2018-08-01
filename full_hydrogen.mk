@@ -26,4 +26,5 @@ PRODUCT_DEVICE := hydrogen
 PRODUCT_NAME := full_hydrogen
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := hydrogen
+PRODUCT_MODEL := Mi MAX
 PRODUCT_MANUFACTURER := Xiaomi
