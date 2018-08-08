@@ -1,6 +1,5 @@
 #
-# Copyright 2016 The CyanogenMod Project
-# Copyright 2017 The LineageOS Project
+# Copyright 2018 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,18 +16,19 @@
 
 $(call inherit-product, device/xiaomi/hydrogen/full_hydrogen.mk)
 
-# Inherit some common rr stuff.
+# Inherit some common RR stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 PRODUCT_NAME := rr_hydrogen
 BOARD_VENDOR := Xiaomi
 
- # Use the latest approved GMS identifiers unless running a signed build
+# Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="hydrogen" \
     PRODUCT_NAME="hydrogen" \
-    PRIVATE_BUILD_DESC="hydrogen-user 6.0.1 MMB29M V8.2.3.0.MBCCNDL release-keys"
+    PRIVATE_BUILD_DESC="hydrogen-user 7.1.2 N2G48C 6A21E528 release-keys"
 endif
 
-BUILD_FINGERPRINT := Xiaomi/hydrogen/hydrogen:6.0.1/MMB29M/V8.2.3.0.MBCCNDL:user/release-keys
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := Xiaomi/hydrogen/hydrogen:7.1.2/N2G48C/6A21E528:user/release-keys

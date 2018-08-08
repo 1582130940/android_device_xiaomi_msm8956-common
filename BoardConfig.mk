@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2018 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_hydrogen_defconfig
-
-WITH_AICP_CHARGER := false
-WITH_LINEAGE_CHARGER := false
-BOARD_USES_CYANOGEN_HARDWARE := true
+TARGET_KERNEL_CONFIG := msm8976_user_defconfig
 
 WITH_LINEAGE_CHARGER := false
 

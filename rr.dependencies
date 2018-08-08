@@ -1,10 +1,5 @@
 [
   {
-    "repository" : "sarthakmalla/device_xiaomi_msm8956-common",
-    "target_path": "device/xiaomi/msm8956-common",
-    "branch"     : "oreo"
-  },
-  {
     "repository" : "LineageOS/android_external_sony_boringssl-compat",
     "target_path": "external/sony/boringssl-compat"
     "branch"     : "lineage-15.1"
@@ -20,12 +15,17 @@
     "branch"     : "lineage-15.1"
   },
   {
-    "repository" : "sarthakmalla/kernel_xiaomi_msm8956",
-    "target_path": "kernel/xiaomi/msm8956",
+    "repository" : "1582130940/android_device_xiaomi_msm8956-common",
+    "target_path": "device/xiaomi/msm8956-common",
     "branch"     : "oreo"
   },
   {
-    "repository" : "sarthakmalla/vendor_xiaomi_hydrogen-new",
+    "repository" : "1582130940/android_kernel_xiaomi_msm8956",
+    "target_path": "kernel/xiaomi/msm8976",
+    "branch"     : "android-8.1"
+  },
+  {
+    "repository" : "1582130940/android_vendor_xiaomi_hydrogen",
     "target_path": "vendor/xiaomi/hydrogen",
     "branch"     : "oreo"
   }

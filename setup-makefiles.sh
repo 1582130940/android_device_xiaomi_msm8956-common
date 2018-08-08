@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,6 +22,6 @@ export DEVICE=hydrogen
 export DEVICE_COMMON=msm8956-common
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2016
+export DEVICE_BRINGUP_YEAR=2018
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
