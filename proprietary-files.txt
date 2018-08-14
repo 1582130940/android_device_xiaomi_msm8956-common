@@ -269,7 +269,6 @@ vendor/lib/libchromatix_s5k5e8_qtec_zsl_preview.so
 vendor/lib/libchromatix_s5k5e8_qtec_zsl_video.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_10_0.fw
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
@@ -277,6 +276,7 @@ etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/cpp_firmware_v1_5_0.fw
 etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_10_0.fw
 
 # Camera sensors
 vendor/lib/libmmcamera_dw9763_eeprom.so
@@ -297,6 +297,7 @@ etc/pp_calib_data_tianma_r63350_1080p_video_mode_dsi_panel.xml
 # DRM
 bin/qseecomd
 vendor/bin/qseeproxydaemon
+vendor/lib/libQSEEComAPI.so
 vendor/lib64/lib-sec-disp.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
@@ -310,13 +311,12 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
-vendor/lib/libQSEEComAPI.so
 
 # Fingerprint sensor
-lib64/hw/fingerprint.fpc.so
-lib64/lib_fpc_tac_shared.so
 lib/hw/fingerprint.fpc.so
 lib/lib_fpc_tac_shared.so
+lib64/hw/fingerprint.fpc.so
+lib64/lib_fpc_tac_shared.so
 
 # QMI
 bin/irsc_util
@@ -324,24 +324,8 @@ etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/data/qmi_config.xml
 etc/permissions/qti_permissions.xml
--lib64/libqminvapi.so
 -lib/libqminvapi.so
-vendor/lib64/libdiag.so
-vendor/lib64/libdsi_netctrl.so
-vendor/lib64/libdsutils.so
-vendor/lib64/libidl.so
-vendor/lib64/libqcci_legacy.so
-vendor/lib64/libqdi.so
-vendor/lib64/libqdp.so
-vendor/lib64/libqmi.so
-vendor/lib64/libqmi_cci.so
-vendor/lib64/libqmi_client_helper.so
-vendor/lib64/libqmi_client_qmux.so
-vendor/lib64/libqmi_common_so.so
-vendor/lib64/libqmi_csi.so
-vendor/lib64/libqmi_encdec.so
-vendor/lib64/libqmiservices.so
-vendor/lib64/libsmemlog.so
+-lib64/libqminvapi.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -358,6 +342,22 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
+vendor/lib64/libdiag.so
+vendor/lib64/libdsi_netctrl.so
+vendor/lib64/libdsutils.so
+vendor/lib64/libidl.so
+vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqdi.so
+vendor/lib64/libqdp.so
+vendor/lib64/libqmi.so
+vendor/lib64/libqmi_cci.so
+vendor/lib64/libqmi_client_helper.so
+vendor/lib64/libqmi_client_qmux.so
+vendor/lib64/libqmi_common_so.so
+vendor/lib64/libqmi_csi.so
+vendor/lib64/libqmi_encdec.so
+vendor/lib64/libqmiservices.so
+vendor/lib64/libsmemlog.so
 
 # Radio
 -app/embms/embms.apk
@@ -377,6 +377,9 @@ framework/embmslibrary.jar
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+vendor/lib/liblqe.so
+vendor/lib/libmdmdetect.so
+vendor/lib/libqcmaputils.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
@@ -389,18 +392,15 @@ vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
-vendor/lib/liblqe.so
-vendor/lib/libmdmdetect.so
-vendor/lib/libqcmaputils.so
 vendor/qcril.db
 
 # Time services
 -app/TimeService/TimeService.apk
 bin/time_daemon
-vendor/lib64/libTimeService.so
--vendor/lib64/libtime_genoff.so
 vendor/lib/libTimeService.so
 -vendor/lib/libtime_genoff.so
+vendor/lib64/libTimeService.so
+-vendor/lib64/libtime_genoff.so
 
 # WiFi
 bin/wcnss_service

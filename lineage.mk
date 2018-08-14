@@ -16,10 +16,10 @@
 
 $(call inherit-product, device/xiaomi/hydrogen/full_hydrogen.mk)
 
-# Inherit some common RR stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common CrDroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := rr_hydrogen
+PRODUCT_NAME := lineage_hydrogen
 BOARD_VENDOR := Xiaomi
 
 # Use the latest approved GMS identifiers unless running a signed build
@@ -27,8 +27,8 @@ ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="hydrogen" \
     PRODUCT_NAME="hydrogen" \
-    PRIVATE_BUILD_DESC="hydrogen-user 7.1.2 N2G48C 6A21E528 release-keys"
+    PRIVATE_BUILD_DESC="hydrogen-user 8.1.0 OPM4.171019.021.R1 DCBE1346 release-keys"
 endif
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Xiaomi/hydrogen/hydrogen:7.1.2/N2G48C/6A21E528:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/hydrogen/hydrogen:8.1.0/OPM4.171019.021.R1/DCBE1346:user/release-keys

@@ -17,7 +17,7 @@
   {
     "repository" : "1582130940/android_device_xiaomi_msm8956-common",
     "target_path": "device/xiaomi/msm8956-common",
-    "branch"     : "oreo"
+    "branch"     : "8.1"
   },
   {
     "repository" : "1582130940/android_kernel_xiaomi_msm8956",
