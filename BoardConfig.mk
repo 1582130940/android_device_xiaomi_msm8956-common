@@ -21,32 +21,5 @@ DEVICE_PATH := device/xiaomi/hydrogen
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := hydrogen
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib64/lib-imsvt.so|libshims_ims.so \
-    /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so \
-    /system/vendor/lib64/libril-qc-qmi-1.so|rild_socket.so
-
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
-# Filesystem
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
-
-# Kernel
-TARGET_KERNEL_CONFIG := msm8976_user_defconfig
-
-WITH_LINEAGE_CHARGER := false
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
-# Sepolicy
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
-# Tap-to-Wake
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
-
 # inherit from the proprietary version
 -include vendor/xiaomi/hydrogen/BoardConfigVendor.mk

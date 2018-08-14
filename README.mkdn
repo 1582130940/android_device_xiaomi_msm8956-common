@@ -6,8 +6,8 @@ Device Tree for Xiaomi Mi MAX (hydrogen)
 Basic   | Spec Sheet
 -------:|:-------------------------
 CPU     | Dual-Core ARM® Cortex™ A72 & Quad-Core ARM® Cortex™ A53
-Chipset | Qualcomm Snapdragon 650 MSM8956/SDM650
-GPU     | Qualcomm Adreno (TM) 510
+Chipset | Qualcomm® Snapdragon™ 650 MSM8956
+GPU     | Qualcomm® Adreno™ 510
 Memory  | 2GB/3GB DDR3 Dual-channel
 Storage | 16GB/32GB
 MicroSD | Up to 128GB
