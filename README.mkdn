@@ -16,4 +16,4 @@ Display | 1920 x 1080 Pixels, 6.44 Inches, 342PPI
 Camera 1| Rear: 16.4 MP, f/2.0, PDAF, Dual-LED (Dual-Tone) Flash
 Camera 2| Front: 5.1 MP, f/2.0
 
-![Xiaomi Mi MAX](https://c1.mifile.cn/f/i/16/mimax/index/specs_gold.jpg)
+![Xiaomi Mi MAX](https://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-max--1.jpg "Xiaomi Mi MAX")
